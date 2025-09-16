@@ -14,6 +14,7 @@ data_venda date
 -- VISUALIZAR REGISTROS EM VENDA
 select * from vendas;
 
+-- INSERIR OS REGISTROS
 insert into vendas (produto, categoria, 
 quantidade, preco_unitario, vendedor,
 data_venda) values
@@ -37,5 +38,16 @@ data_venda) values
 'Ana', '2025-09-06'),
 ('Impressora HP', 'Informatica', 6, 300.00,
 'Beatriz', '2025-09-07');
+
+
+-- selecione todos os registros da tabela vendas
+select * from vendas;
+
+-- Liste os vendedores de forma única
+select distinct(vendedor) from vendas;
+
+-- Liste o nome do produto e valor vendido
+select produto, preco_unitario from venda
+
 
 
