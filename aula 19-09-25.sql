@@ -47,6 +47,31 @@ insert into Matricula (idAluno, idProfessor, semestre) values
 (4,1,'2024-1'),
 (1,3,'2024-2');
 
-select * from 
+select * from aluno;
+select * from professor;
+select * from matricula;
+
+-- QUESTÕES
+-- lISTAR TODOS OS ALUNOS CADASTRADOS
+select * from aluno;
+
+-- Mostre apenas o nome e o curso dos alunos
+select nome, curso from aluno;
+
+-- listar todos os professores e suas disciplinas
+select nome,disciplina from professor;
+
+-- mostre todas as matriculas realizadas no semestre 2024-1
+select * from matricula where semestre = '2024-1';
+
+-- exiba o nome do aluno e do professor de todas as matricula
+select a.nome,p.nome
+from matricula as m
+join aluno as a on m.idaluno = a.idAluno
+join professor as p on m.idprofessor= p.idprofessor
+
+-- conte quantos alunos estão matriculados em cada professor
+
+
 
 
