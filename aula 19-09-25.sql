@@ -28,3 +28,9 @@ semestre varchar(10),
 foreign key (idAluno) references Aluno(idAluno),
 foreign key (idProfessor) references Professor(idProfessor)
 );
+
+insert into Aluno(nome, data_nascimento,curso) values 
+('Ana Souza','2000-05-12','Engenharia'),
+('Carlos Silva','1999-11-23','Direito'),
+('Mariana Lima','2001-02-17','Medicina'),
+('João Pedro','2000-08-09','Engenharia');
