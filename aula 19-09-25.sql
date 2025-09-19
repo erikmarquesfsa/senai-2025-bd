@@ -47,4 +47,6 @@ insert into Matricula (idAluno, idProfessor, semestre) values
 (4,1,'2024-1'),
 (1,3,'2024-2');
 
+select * from 
+
 
